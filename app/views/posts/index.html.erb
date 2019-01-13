@@ -1,3 +1,4 @@
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div><%= link_to post.title, post_path(post) %></div>
+  <!-- Ruby knows that if you pass the post object as an argument to automatically use the ID attribute -->
 <% end %>
